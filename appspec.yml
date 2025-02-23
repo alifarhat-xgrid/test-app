@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: <TASK_DEFINITION>
+        TaskDefinition: "arn:aws:ecs:us-east-1:140023396527:task-definition/test-app-task:1"
         LoadBalancerInfo:
           ContainerName: "test-app"
           ContainerPort: 3000
